@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Chest Simulator by Zoltan</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <main>
+        <div class="container">
+          <h1>Green Chest Simulator <span id="sign">by Zoltan</span></h1>
+          <div id="case">
+            <img src="Pirate_Booty.png" alt="Immagine di cassetta chiusa" id="case-img">
+          </div>
+          <br>
+          <div class="input-group">    
+            <input type="number" id="attempts-input" value="1000">
+            <button id="set-attempts-button">Imposta tentativi</button><br> 
+          </div>
+          <br>
+          <div class="input-group">    
+            <input type="number" id="lg4-input" value="36">
+            <button id="set-lg4-button">Imposta il numero di LG4 che desideri</button><br> 
+          </div>
+          <br>
+          <div class="input-group">    
+            <input type="number" id="percentage-input" value="2.8" max="100">
+            <button id="set-percentage-button">Imposta percentuale di riuscita</button><br> 
+          </div>
+          <br>
+          <button onclick="openCase()">Apri Forzieri</button>
+    
+          <div id="result"></div>
+          <div>
+            <p id="attempts-label">Numero di tentativi: 1000</p>
+            <p>Blocchi di   <span id="tent">1000</span>  provati: <span id="totalAttempts">0</span></p>
+            <p>Try totali: <span id="try">0</span></p>
+            <p>LG4 trovati: <span id="successes">0</span>/<span id="lg4-target">36</span></p>
+            <p>PLT spesi in totale: <span id="plt">0</span></p>
+            <p>Percentuale di riuscita: <span id="percentage">2.8</span>%</p>
+            <p id="ciclo"></p>
+            <p id="congrats"></p>
+            <button onclick="reset()">Reset</button>
+          </div>
+        </div>
+      </main>
+
+      <script src="script.js"></script>
+</body>
+</html>
